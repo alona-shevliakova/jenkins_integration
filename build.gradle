@@ -1,0 +1,17 @@
+plugins {
+    id 'groovy'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation localGroovy()
+    testImplementation 'org.spockframework:spock-core:2.3-groovy-3.0'
+    testImplementation 'com.lesfurets:jenkins-pipeline-unit:1.1'
+}
+
+test {
+    useJUnitPlatform()
+}
